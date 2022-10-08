@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 if [ "$#" -ne 2 ]; then
     echo "usage: $(basename $0) host port"

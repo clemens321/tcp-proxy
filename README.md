@@ -1,4 +1,6 @@
-# tcp-proxy-docker
+# tcp-proxy
+
+forked from: https://github.com/hpello/tcp-proxy-docker
 
 ## Description
 
@@ -17,13 +19,13 @@ tcp-proxy host port
 To relay all TCP connections on your port `1234` to `my.cool.host:8080`:
 
 ```bash
-docker run -it --rm -p 1234:8080 hpello/tcp-proxy my.cool.host 8080
+docker run -it --rm -p 1234:8080 ghcr.io/clemens321/tcp-proxy my.cool.host 8080
 ```
 
 To access a container running on the `compose_default` network, with name `api` and port `8080`:
 
 ```bash
-docker run -it --rm --network compose_default -p 1234:8080 hpello/tcp-proxy api 8080
+docker run -it --rm --network compose_default -p 1234:8080 ghcr.io/clemens321/tcp-proxy api 8080
 ```
 
 ## Listen port
